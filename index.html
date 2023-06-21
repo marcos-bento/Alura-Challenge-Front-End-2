@@ -6,12 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meteora - Home</title>
 
+    <!-- Tag Meta, for SEO max 160 characters -->
+    <meta name="description" content="Meteora, o melhor site de moda com as melhores roupas e calçados para você ficar incrível!">
+    <meta name="author" content="Marcos Bento">
+
+    <!-- Link to Icon -->
+    <link rel="icon" type="image/png" href="assets/img/Favicon-64px.png">
+
     <!-- Link to Reset CSS -->
     <link rel="stylesheet" href="assets/css/reset.css">
 
+    <!-- Link to font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Link to style -->
+    <link rel="stylesheet" href="assets/css/style.css">
     
+    <!-- Connectin Font Awesome with my login to insert some icones -->
+    <script src="https://kit.fontawesome.com/e36fc46d40.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Hello World</h1>
+
+    <header>
+        <nav class="navbar_container">
+            <img class="logo" src="assets/img/Mobile/Logo mobile.png" alt="Logo da Meteora">
+
+            <!-- Hamburguer Menu (mobile only)-->
+            <div class="hamb">
+                <i class="fa-sharp fa-solid fa-bars fa-lg" style="color: #daff01;"></i>
+            </div>
+
+            <div class="hamb_menu display_none">
+                <i class="fa-sharp fa-regular fa-x fa-lg" style="color: #daff01;"></i>
+                <ul>
+                    <li><a class="menu_selected" href="#">Home</a></li>
+                    <li><a href="#">Nossas Lojas</a></li>
+                    <li><a href="#">Novidades</a></li>
+                    <li><a href="#">Promoções</a></li>
+                </ul>
+            </div>
+            
+
+
+            <!-- Regular Menu -->
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Nossas Lojas</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Promoções</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- Search box (mobile only) -->
+        <div class="search">
+            <form class="search_form" action="">
+                <input class="search_input" type="text" name="" placeholder="Digite o produto">
+            </form>
+    
+            <button class="search_button">
+                <p>Search</p>
+            </button>
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- link do scripts in body -->
+        <script async src="assets/js/index.js"></script>
+    </main>
 </body>
 </html>

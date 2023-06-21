@@ -1,0 +1,95 @@
+.navbar_container{
+    background-color: var(--color-black);
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+    height: 58px;
+    align-items: center;
+}
+
+.navbar_container > .logo {
+    height: 18px;
+    width: 125.7px;
+    margin-left: 22px;
+}
+
+.navbar_container > ul {
+    display: none;
+}
+
+.navbar_container > .hamb > i{
+    margin-right: 21px;
+}
+
+.navbar_container > ul > li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.navbar_container > ul > li > a, .navbar_container > div > ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+
+.display_none{
+    display: none;
+}
+
+.hamb_menu{
+    background-color: var(--color-dark-grey);
+    width: 144px;
+    height: 197px;
+    align-self: baseline;
+    position: relative;
+}
+
+.hamb_menu > i {
+    margin-left: 5em;
+    margin-top: 1em;
+}
+
+.hamb_menu > ul > li{
+    padding: 8% 0;
+    margin: auto;
+    width: 70%;
+    border-bottom: 1px solid white;
+}
+
+.hamb_menu > ul > li:nth-child(4){
+    border-bottom: none;
+}
+
+.menu_selected {
+    color: var(--color-lime)!important;
+    font-weight: 700;
+}
+
+.search{
+    display: flex;
+    margin: 24px 27px;
+    justify-content: center;
+    gap: 8px;
+}
+
+.search > .search_form > .search_input{
+    width: 225.6px;
+    height: 37px;
+}
+
+.search > .search_form > .search_input::placeholder{
+    padding-left: 1em;
+    font-size: 13px;
+}
+
+.search_button{
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid black;
+    width: 88.42px;
+}
+
+.search_button > p{
+    font-weight: 500;
+    font-size: 16px;
+}
+

@@ -1,0 +1,19 @@
+/* Importing all CSS files */
+@import url("header.css");
+
+/* Setting the principal variables */
+:root{
+    --main-font: 'Inter';
+    --color-black: #000000;
+    --color-grey: #CCCCCC;
+    --color-yellow: #DAFF01;
+    --color-purple: #9353FF;
+    --color-magenta: #EE6471;
+    --color-orange: #F87F46;
+    --color-lime: #DAFF01;
+    --color-dark-grey: #343A40;
+}
+
+body{
+    font-family: var(--main-font);
+}
