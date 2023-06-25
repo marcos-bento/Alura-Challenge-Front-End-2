@@ -31,14 +31,24 @@
 
     <header>
         <nav class="navbar_container">
-            <img class="logo" src="assets/img/Mobile/Logo mobile.png" alt="Logo da Meteora">
+            <div class="left_components">
+                <figure class="logo"></figure>
+
+                <!-- Regular Menu -->
+                <ul class="menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Nossas Lojas</a></li>
+                    <li><a href="#">Promoções</a></li>
+                    <li><a href="#">Novidades</a></li>
+                </ul>
+            </div>
 
             <!-- Hamburguer Menu (mobile only)-->
             <div class="hamb">
                 <i class="fa-sharp fa-solid fa-bars fa-lg" style="color: #daff01;"></i>
             </div>
 
-            <div class="hamb_menu display_none">
+            <div class="hamb_menu">
                 <i class="fa-sharp fa-regular fa-x fa-lg" style="color: #daff01;"></i>
                 <ul>
                     <li><a class="menu_selected" href="#">Home</a></li>
@@ -47,21 +57,22 @@
                     <li><a href="#">Promoções</a></li>
                 </ul>
             </div>
-            
 
-
-            <!-- Regular Menu -->
-            <ul id="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Nossas Lojas</a></li>
-                <li><a href="#">Novidades</a></li>
-                <li><a href="#">Promoções</a></li>
-            </ul>
+            <!-- Regular Search -->
+            <div class="search">
+                <form class="search_form" action="">
+                    <input class="search_input" type="text" name="" placeholder="Digite o produto">
+                </form>
+        
+                <button class="search_button">
+                    <p>Search</p>
+                </button>
+            </div>
 
         </nav>
 
         <!-- Search box (mobile only) -->
-        <div class="search">
+        <div class="search_mobile">
             <form class="search_form" action="">
                 <input class="search_input" type="text" name="" placeholder="Digite o produto">
             </form>

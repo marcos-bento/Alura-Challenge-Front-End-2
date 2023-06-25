@@ -12,6 +12,10 @@ close_menu_button.addEventListener('click', () =>{
 })
 
 function hambOpen(){
-    menu_image_bars.classList.toggle('display_none');
-    menu_links.classList.toggle('display_none');    
+    hambMenuShow(menu_links);
+    hambMenuShow(menu_button);
+}
+
+function hambMenuShow(context){
+    context.classList.toggle('active');
 }
