@@ -26,6 +26,10 @@
     
     <!-- Connectin Font Awesome with my login to insert some icones -->
     <script src="https://kit.fontawesome.com/e36fc46d40.js" crossorigin="anonymous"></script>
+
+    <!-- link to Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
 </head>
 <body>
 
@@ -61,7 +65,7 @@
             <!-- Regular Search -->
             <div class="search">
                 <form class="search_form" action="">
-                    <input class="search_input" type="text" name="" placeholder="Digite o produto">
+                    <input class="search_input" type="text" name="search" placeholder="Digite o produto">
                 </form>
         
                 <button class="search_button">
@@ -74,7 +78,7 @@
         <!-- Search box (mobile only) -->
         <div class="search_mobile">
             <form class="search_form" action="">
-                <input class="search_input" type="text" name="" placeholder="Digite o produto">
+                <input class="search_input" type="text" name="search_mobile" placeholder="Digite o produto">
             </form>
     
             <button class="search_button">
@@ -86,8 +90,66 @@
 
     <main>
 
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="banner banner_mobile" src="/assets/img/Mobile/Banner_carousel 1 _ 375.png" alt="Uma mulher morena vestida com uma jaqueta rosa em pose em poderada, fundo roxo">
+                    <img class="banner banner_tablet" src="/assets/img/Tablet/Banner_carousel_1_768.png" alt="Uma mulher morena vestida com uma jaqueta rosa em pose em poderada, fundo roxo">
+                    <img class="banner banner_desktop" src="/assets/img/Desktop/Banner_carousel_1_1440.png" alt="Uma mulher morena vestida com uma jaqueta rosa em pose em poderada, fundo roxo">
+                </div>
+                
+                <div class="swiper-slide">
+                    <img class="banner banner_mobile" src="/assets/img/Mobile/Banner_carousel 2 _ 375.png" alt="Uma mulher morena, de oculos escuros e roupa preta sentada em um sofá, fundo pink salmão">
+                    <img class="banner banner_tablet" src="/assets/img/Tablet/Banner_carousel_2_768.png" alt="Uma mulher morena vestida com uma jaqueta rosa em pose em poderada, fundo roxo">
+                    <img class="banner banner_desktop" src="/assets/img/Desktop/Banner_carousel_2_1440.png" alt="Uma mulher morena vestida com uma jaqueta rosa em pose em poderada, fundo roxo">
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="banner banner_mobile" src="/assets/img/Mobile/Banner_carousel 3 _ 375.png" alt="Um homem moreno vestido com camisa branca e blusa cinza, gravata borboleta e chapéu, fundo vermelho">
+                    <img class="banner banner_tablet" src="/assets/img/Tablet/Banner_carousel_3_768.png" alt="Uma mulher morena vestida com uma jaqueta rosa em pose em poderada, fundo roxo">
+                    <img class="banner banner_desktop" src="/assets/img/Desktop/Banner_carousel_3_1440.png" alt="Uma mulher morena vestida com uma jaqueta rosa em pose em poderada, fundo roxo">
+                </div>
+            </div>
+            <div class="swiper-button-next"><i class="fa-sharp fa-solid fa-caret-right fa-2xl custom-pagination" style="color: #ffffff;"></i></div>
+            <div class="swiper-button-prev"><i class="fa-sharp fa-solid fa-caret-left fa-2xl custom-pagination" style="color: #ffffff;"></i></div>
+            <div class="swiper-pagination"></i></div>
+        </div>
+
+
+
+
+
+
+        
         <!-- link do scripts in body -->
         <script async src="assets/js/index.js"></script>
+
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            });
+        </script>
+
     </main>
 </body>
 </html>

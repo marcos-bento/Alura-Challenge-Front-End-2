@@ -1,5 +1,6 @@
 /* Importing all CSS files */
 @import url("header.css");
+@import url("banner.css");
 
 /* Setting the principal variables */
 :root{
