@@ -18,7 +18,7 @@
     height: 18px;
     width: 125.7px;
     margin-left: 22px;
-    background-image: url("/assets/img/Mobile/Logo_mobile.png");
+    background-image: url("../img/Mobile/Logo_mobile.png");
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -116,7 +116,7 @@
 @media screen and (min-width: 768px) {
 
     .logo{
-        background-image: url("/assets/img/Tablet/Logo_tablet.png");
+        background-image: url("../img/Tablet/Logo_tablet.png");
         width: 100px;
         height: 24px;
     }
@@ -171,7 +171,7 @@
 @media screen and (min-width: 1440px){
     
     .logo{
-        background-image: url("/assets/img/Desktop/Logo_desktop.png");
+        background-image: url("../img/Desktop/Logo_desktop.png");
         width: 137px;
         height: 32px;
     }
