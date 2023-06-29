@@ -3,12 +3,14 @@
 @import url("banner.css");
 @import url("category.css");
 @import url("infos.css");
+@import url("products.css");
 
 /* Setting the principal variables */
 :root{
     --main-font: 'Inter';
     --color-black: #000000;
     --color-grey: #CCCCCC;
+    --color-almost-black: #292129;
     --color-yellow: #DAFF01;
     --color-purple: #9353FF;
     --color-magenta: #EE6471;
@@ -19,4 +21,5 @@
 
 body{
     font-family: var(--main-font);
+    color:var(--color-almost-black) ;
 }
