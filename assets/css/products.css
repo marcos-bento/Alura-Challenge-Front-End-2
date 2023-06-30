@@ -78,6 +78,10 @@
     .product_image_mobile, .product_image_desktop{
         display: none;
     }
+
+    .product_card{
+        width: 330px;
+    }
 }
 
 /* Media query for 1440px */
