@@ -100,12 +100,16 @@
                 </div>
                 
                 <div class="swiper-slide">
+                    <h2 class="swiper-title">COLEÇÃO ATEMPORAL</h2> 
+                    <p class="swiper-text">Estilo e qualidade para durar.</p>
                     <img class="banner banner_mobile" src="assets/img/Mobile/Banner_carousel 2 _ 375.png" alt="Uma mulher morena, de oculos escuros e roupa preta sentada em um sofá, fundo pink salmão">
                     <img class="banner banner_tablet" src="assets/img/Tablet/Banner_carousel_2_768.png" alt="Uma mulher morena vestida com uma jaqueta rosa em pose em poderada, fundo roxo">
                     <img class="banner banner_desktop" src="assets/img/Desktop/Banner_carousel_2_1440.png" alt="Uma mulher morena vestida com uma jaqueta rosa em pose em poderada, fundo roxo">
                 </div>
 
                 <div class="swiper-slide">
+                    <h2 class="swiper-title swiper-title-2">COLEÇÃO ATEMPORAL</h2> 
+                    <p class="swiper-text swiper-text-2">Alto impacto visual, baixo impacto ambiental.</p>
                     <img class="banner banner_mobile" src="assets/img/Mobile/Banner_carousel 3 _ 375.png" alt="Um homem moreno vestido com camisa branca e blusa cinza, gravata borboleta e chapéu, fundo vermelho">
                     <img class="banner banner_tablet" src="assets/img/Tablet/Banner_carousel_3_768.png" alt="Uma mulher morena vestida com uma jaqueta rosa em pose em poderada, fundo roxo">
                     <img class="banner banner_desktop" src="assets/img/Desktop/Banner_carousel_3_1440.png" alt="Uma mulher morena vestida com uma jaqueta rosa em pose em poderada, fundo roxo">
@@ -317,8 +321,13 @@
             },
             pagination: {
                 el: ".swiper-pagination",
+                bulletClass: 'swiper-pagination-bullet',
+                bulletActiveClass: 'swiper-pagination-bullet-active',
+                bulletElement: 'span',
                 clickable: true,
-
+                renderBullet: function (index, className) {
+                return '<span class="' + className + '"></span>';
+                }
             },
             navigation: {
                 nextEl: ".swiper-button-next",
