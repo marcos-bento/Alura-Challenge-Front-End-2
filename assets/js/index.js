@@ -19,3 +19,27 @@ function hambOpen(){
 function hambMenuShow(context){
     context.classList.toggle('active');
 }
+
+// ###################################
+// JS FOR MODAL
+// ###################################
+
+var open_modal_button = document.getElementsByClassName("openModal");
+var modal = document.getElementById("modal");
+var close_button = document.getElementsByClassName("close")[0];
+
+for (var i = 0; i < open_modal_button.length; i++) {
+    open_modal_button[i].addEventListener("click", function() {
+      modal.style.display = "block";
+    });
+}
+
+close_button.addEventListener("click", function() {
+  modal.style.display = "none";
+});
+
+window.addEventListener("click", function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+});
