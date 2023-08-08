@@ -1,0 +1,94 @@
+{
+  "products": [
+      { 
+          "id": 1, 
+          "product_image": "image", 
+          "product_label": "label",
+          "product_description": "description",
+          "product_price": "price",
+          "seller_info": "riachuelo",
+          "category": "category",
+          "color": [
+            {
+              "id": 1,
+              "name": "black"
+            },
+            {
+              "id": 2,
+              "name": "white"
+            },
+            {
+              "id": 3,
+              "name": "blue"
+            }
+          ],
+          "size": [
+            {
+              "id": 1,
+              "name": "P"
+            },
+            {
+              "id": 2,
+              "name": "PP"
+            },
+            {
+              "id": 3,
+              "name": "M"
+            },
+            {
+              "id": 4,
+              "name": "G"
+            },
+            {
+              "id": 5,
+              "name": "GG"
+            }
+          ] 
+      },
+      {
+          "id": 2, 
+          "product_image": "image", 
+          "product_label": "label",
+          "product_description": "description",
+          "product_price": "price",
+          "seller_info": "riachuelo",
+          "category": "category",
+          "color": [
+            {
+              "id": 1,
+              "name": "black"
+            },
+            {
+              "id": 2,
+              "name": "white"
+            },
+            {
+              "id": 3,
+              "name": "blue"
+            }
+          ],
+          "size": [
+            {
+              "id": 1,
+              "name": "P"
+            },
+            {
+              "id": 2,
+              "name": "PP"
+            },
+            {
+              "id": 3,
+              "name": "M"
+            },
+            {
+              "id": 4,
+              "name": "G"
+            },
+            {
+              "id": 5,
+              "name": "GG"
+            }
+          ] 
+      }
+  ]
+}
