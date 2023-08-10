@@ -38,6 +38,14 @@
     padding: 16px 0;
 }
 
+.category_button{
+    cursor:pointer;
+}
+
+.category_button:hover{
+    opacity:.8;
+}
+
 /* Media Query for 768px */
 @media screen and (min-width: 768px) {
     

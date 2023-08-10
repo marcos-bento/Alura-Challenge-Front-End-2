@@ -2,7 +2,10 @@
     background-color: var(--color-black);
     display: flex;
     justify-content: space-between;
-    width: auto;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
     height: 58px;
     align-items: center;
     gap: 20px;
@@ -86,6 +89,7 @@
     margin: 24px 27px;
     justify-content: center;
     gap: 8px;
+    padding-top: 58px;
 }
 
 .search_mobile > .search_form > .search_input{
@@ -114,6 +118,10 @@
 
 /* Media Querry for 768 px */
 @media screen and (min-width: 768px) {
+
+    main{
+        padding-top: 58px;
+    }
 
     .logo{
         background-image: url("../img/Tablet/Logo_tablet.png");

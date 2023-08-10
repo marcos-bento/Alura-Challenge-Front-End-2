@@ -65,10 +65,10 @@
             <!-- Regular Search -->
             <div class="search">
                 <form class="search_form" action="">
-                    <input class="search_input" type="text" name="search" placeholder="Digite o produto">
+                    <input class="search_input" type="text" name="search" placeholder="Digite o produto" data-search>
                 </form>
         
-                <button class="search_button">
+                <button class="search_button" data-search-button>
                     <p>Search</p>
                 </button>
             </div>
@@ -78,10 +78,10 @@
         <!-- Search box (mobile only) -->
         <div class="search_mobile">
             <form class="search_form" action="">
-                <input class="search_input" type="text" name="search_mobile" placeholder="Digite o produto">
+                <input class="search_input" type="text" name="search_mobile" placeholder="Digite o produto" data-search-mobile>
             </form>
     
-            <button class="search_button">
+            <button class="search_button_mobile" data-search-mobile-button>
                 <p>Search</p>
             </button>
         </div>
@@ -129,42 +129,42 @@
                     <img class="category_card_mobile" src="assets/img/Mobile/Categorias/Categoria camiseta.png" alt="uma camisa verde confortável">
                     <img class="category_card_tablet" src="assets/img/Tablet/Categorias/Categoria camiseta.png" alt="uma camisa verde confortável">
                     <img class="category_card_desktop" src="assets/img/Desktop/Categorias/Categoria camiseta.png" alt="uma camisa verde confortável">
-                    <p class="category_label">Camisetas</p>
+                    <p class="category_label category_button">Camisetas</p>
                 </div>
 
                 <div class="category_card">
                     <img class="category_card_mobile" src="assets/img/Mobile/Categorias/Categoria Bolsas.png" alt="uma bolsa de couro com alça">
                     <img class="category_card_tablet" src="assets/img/Tablet/Categorias/Categoria Bolsas.png" alt="uma bolsa de couro com alça">
                     <img class="category_card_desktop" src="assets/img/Desktop/Categorias/Categoria Bolsa.png" alt="uma bolsa de couro com alça">
-                    <p class="category_label">Bolsas</p>
+                    <p class="category_label category_button">Bolsas</p>
                 </div>
 
                 <div class="category_card">
                     <img class="category_card_mobile" src="assets/img/Mobile/Categorias/Categoria calçados.png" alt="Um par de tênis modernos">
                     <img class="category_card_tablet" src="assets/img/Tablet/Categorias/Categoria calçados.png" alt="Um par de tênis modernos">
                     <img class="category_card_desktop" src="assets/img/Desktop/Categorias/Categoria Calçados.png" alt="Um par de tênis modernos">
-                    <p class="category_label">Calçados</p>
+                    <p class="category_label category_button">Calçados</p>
                 </div>
 
                 <div class="category_card">
                     <img class="category_card_mobile" src="assets/img/Mobile/Categorias/Categoria calças.png" alt="Uma pilha de calças jeans">
                     <img class="category_card_tablet" src="assets/img/Tablet/Categorias/Categoria calças.png" alt="Uma pilha de calças jeans">
                     <img class="category_card_desktop" src="assets/img/Desktop/Categorias/Categoria calça.png" alt="Uma pilha de calças jeans">
-                    <p class="category_label">Calças</p>
+                    <p class="category_label category_button">Calças</p>
                 </div>
 
                 <div class="category_card">
                     <img class="category_card_mobile" src="assets/img/Mobile/Categorias/Categoria Casacos.png" alt="Um casaco marrom confortável">
                     <img class="category_card_tablet" src="assets/img/Tablet/Categorias/Categoria casacos.png" alt="Um casaco marrom confortável">
                     <img class="category_card_desktop" src="assets/img/Desktop/Categorias/Categoria casacos.png" alt="Um casaco marrom confortável">
-                    <p class="category_label">Casacos</p>
+                    <p class="category_label category_button">Casacos</p>
                 </div>
 
                 <div class="category_card">
                     <img class="category_card_mobile" src="assets/img/Mobile/Categorias/Categoria óculos.png" alt="Óculos escuro estiloso">
                     <img class="category_card_tablet" src="assets/img/Tablet/Categorias/Categoria óculos.png" alt="Óculos escuro estiloso">
                     <img class="category_card_desktop" src="assets/img/Desktop/Categorias/Categoria óculos.png" alt="Óculos escuro estiloso">
-                    <p class="category_label">Óculos</p>
+                    <p class="category_label category_button">Óculos</p>
                 </div>
 
             </div>
@@ -175,73 +175,9 @@
 
             <h3 class="products_title">Produtos que estão bombando!</h3>
 
-            <div class="products_container">
+            <div class="products_container" data-products>
 
-                <div class="product_card product_card_1">
-                    <img class="product_image_mobile" src="assets/img/Mobile/Imagens cards/Card camiseta.png" alt="Rapaz branco de camisa cor de abóbora e toca preta encostado na parede">
-                    <img class="product_image_tablet" src="assets/img/Tablet/Imagens Cards/camiseta.png" alt="Rapaz branco de camisa cor de abóbora e toca preta encostado na parede">
-                    <img class="product_image_desktop" src="assets/img/Desktop/Imagens Cards/Camiseta.png" alt="Rapaz branco de camisa cor de abóbora e toca preta encostado na parede">
-
-                    <h4 class="product_label">Camiseta Conforto</h4>
-                    <p class="product_description">Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.</p>
-                    <p class="product_price">R$70,00</p>
-                    <button class="product_cto openModal"> Ver mais </button>
-                </div>
-
-                <div class="product_card product_card_2">
-                    <img class="product_image_mobile" src="assets/img/Mobile/Imagens cards/Card calça.png" alt="Moça negra com calça bege, sapato alto branco e camisa marrom em um local árido">
-                    <img class="product_image_tablet" src="assets/img/Tablet/Imagens Cards/calça.png" alt="Moça negra com calça bege, sapato alto branco e camisa marrom em um local árido">
-                    <img class="product_image_desktop" src="assets/img/Desktop/Imagens Cards/Calça.png" alt="Moça negra com calça bege, sapato alto branco e camisa marrom em um local árido">
-
-                    <h4 class="product_label">Calça Alfaiataria</h4>
-                    <p class="product_description">Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</p>
-                    <p class="product_price">R$180,00</p>
-                    <button class="product_cto openModal"> Ver mais </button>
-                </div>
-
-                <div class="product_card product_card_3">
-                    <img class="product_image_mobile" src="assets/img/Mobile/Imagens cards/Card tenis.png" alt="Tênis cinza em destaque com reflexo em uma poça de água">
-                    <img class="product_image_tablet" src="assets/img/Tablet/Imagens Cards/tenis.png" alt="Tênis cinza em destaque com reflexo em uma poça de água">
-                    <img class="product_image_desktop" src="assets/img/Desktop/Imagens Cards/Tenis.png" alt="Tênis cinza em destaque com reflexo em uma poça de água">
-
-                    <h4 class="product_label">Tênis Chunky</h4>
-                    <p class="product_description">Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.</p>
-                    <p class="product_price">R$250,00</p>
-                    <button class="product_cto openModal"> Ver mais </button>
-                </div>
-
-                <div class="product_card product_card_4">
-                    <img class="product_image_mobile" src="assets/img/Mobile/Imagens cards/Card jaqueta jeans.png" alt="Rapaz negro de jaqueta Jeans e touca preta">
-                    <img class="product_image_tablet" src="assets/img/Tablet/Imagens Cards/jaqueta jeans.png" alt="Rapaz negro de jaqueta Jeans e touca preta">
-                    <img class="product_image_desktop" src="assets/img/Desktop/Imagens Cards/Jaqueta.png" alt="Rapaz negro de jaqueta Jeans e touca preta">
-
-                    <h4 class="product_label">Jaqueta Jeans</h4>
-                    <p class="product_description">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
-                    <p class="product_price">R$150,00</p>
-                    <button class="product_cto openModal"> Ver mais </button>
-                </div>
-
-                <div class="product_card product_card_5">
-                    <img class="product_image_mobile" src="assets/img/Mobile/Imagens cards/Cards óculos.png" alt="Rapaz negro de cabelo loiro, camisa branca deitado no sofá, com um cachorro poodle ao lado">
-                    <img class="product_image_tablet" src="assets/img/Tablet/Imagens Cards/óculos.png" alt="Rapaz negro de cabelo loiro, camisa branca deitado no sofá, com um cachorro poodle ao lado">
-                    <img class="product_image_desktop" src="assets/img/Desktop/Imagens Cards/óculos.png" alt="Rapaz negro de cabelo loiro, camisa branca deitado no sofá, com um cachorro poodle ao lado">
-
-                    <h4 class="product_label">Óculos Redondo</h4>
-                    <p class="product_description">Armação metálica em grafite com lentes arredondadas. Sem erro!</p>
-                    <p class="product_price">R$120,00</p>
-                    <button class="product_cto openModal"> Ver mais </button>
-                </div>
-
-                <div class="product_card product_card_6">
-                    <img class="product_image_mobile" src="assets/img/Mobile/Imagens cards/Card bolsa.png" alt="Mulher de calça preta e sobretudo bege segurando uma bolsa de couro">
-                    <img class="product_image_tablet" src="assets/img/Tablet/Imagens Cards/bolsa.png" alt="Mulher de calça preta e sobretudo bege segurando uma bolsa de couro">
-                    <img class="product_image_desktop" src="assets/img/Desktop/Imagens Cards/Bolsa.png" alt="Mulher de calça preta e sobretudo bege segurando uma bolsa de couro">
-
-                    <h4 class="product_label">Bolsa coringa</h4>
-                    <p class="product_description">Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!</p>
-                    <p class="product_price">R$120,00</p>
-                    <button class="product_cto openModal"> Ver mais </button>
-                </div>
+                <!-- Products will be loaded here -->
 
             </div>
 
@@ -259,60 +195,7 @@
 
                     <div class="modal_outer_content">
 
-                        <div class="modal_product_image_large_screens">
-                            <img src="assets/img/Tablet/Imagens Cards/jaqueta jeans.png" alt="" class="modal_product_image_large">
-                        </div>
-
-                        <div class="modal_inner_content_superior">
-                            <img src="assets/img/Mobile/Imagens cards/Card jaqueta jeans.png" alt="" class="modal_product_image">
-                            <h2 class="modal_product_name">Jaqueta Jeans</h2>
-                            <p class="modal_product_details">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
-                            <hr class="modal_hr">
-                            <p class="modal_product_price">R$ 150,00</p>
-                            <p class="modal_seller_info">vendido e entregue por Riachuelo</p>
-                            <hr class="modal_hr_2">
-                            <h3 class="modal_product_variation">Cor:</h3>
-                            <div class="modal_radio_button">
-                                <div class="radio-wrapper">
-                                    <input type="radio" name="color" value="opcao1" checked>
-                                    <label class="radio-type-label">Azul Claro</label>
-                                </div>
-                                <div class="radio-wrapper">
-                                    <input type="radio" name="color" value="opcao2">
-                                    <label class="radio-type-label">Offwhite</label>
-                                </div>
-                                <div class="radio-wrapper">
-                                    <input type="radio" name="color" value="opcao3">
-                                    <label class="radio-type-label">Preto</label>
-                                </div>
-                            </div>
-                            <hr class="modal_hr_2">
-                            <h3 class="modal_product_variation">Tamanho:</h3>
-                            <div class="modal_radio_button">
-                                <div class="radio-wrapper">
-                                    <input type="radio" name="size" value="opcao1" checked>
-                                    <label class="radio-type-label">P</label>
-                                </div>
-                                <div class="radio-wrapper">
-                                    <input type="radio" name="size" value="opcao2">
-                                    <label class="radio-type-label">PP</label>
-                                </div>
-                                <div class="radio-wrapper">
-                                    <input type="radio" name="size" value="opcao4">
-                                    <label class="radio-type-label">M</label>
-                                </div>
-                                <div class="radio-wrapper">
-                                    <input type="radio" name="size" value="opcao5">
-                                    <label class="radio-type-label">G</label>
-                                </div>
-                                <div class="radio-wrapper">
-                                    <input type="radio" name="size" value="opcao6">
-                                    <label class="radio-type-label">GG</label>
-                                </div>
-                            </div>
-
-                            <button class="add_to_cart_button">Adicionar à sacola</button>
-                        </div>
+                        <!-- Modal Content goes here -->
 
                     </div>
                    
@@ -398,7 +281,10 @@
         </section>
 
         <!-- link do scripts in body -->
-        <script async src="assets/js/index.js"></script>
+        <script src="assets/js/index.js"></script>
+
+        <!-- link do script showProducts (Conexão via API ao DB.JSON) -->
+        <script type='module' src="assets/js/showProducts.js"></script>
 
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

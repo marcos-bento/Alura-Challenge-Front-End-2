@@ -157,6 +157,10 @@
     display: none;
 }
 
+.add_to_cart_button{
+    cursor: pointer; 
+}
+
 /* Media query for 768px */
 
 @media screen and (min-width : 768px) {
