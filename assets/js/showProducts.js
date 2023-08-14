@@ -35,8 +35,6 @@ showProducts();
 // Search Feature
 // ##########################
 
-const mobileSearch = document.querySelector("[data-search-mobile]");
-const mobileSearchButton = document.querySelector("[data-search-mobile-button]");
 const inputSearch = document.querySelector("[data-search]");
 const searchButton = document.querySelector("[data-search-button]");
 
@@ -70,6 +68,9 @@ searchButton.addEventListener("click", function(event) {
         searchProducts(inputSearch.value);
     }
 });
+
+const mobileSearch = document.querySelector("[data-search-mobile]");
+const mobileSearchButton = document.querySelector("[data-search-mobile-button]");
 
 mobileSearchButton.addEventListener("click", function(event) {
     event.preventDefault();

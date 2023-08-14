@@ -28,20 +28,41 @@ function hambMenuShow(context){
 // JS FOR NEWSLETTER MODAL
 // ###################################
 
-const newsletter_button = document.querySelector('.newsletter_button');
-var news_modal = document.getElementById("modal_newsletter");
-const news_close_button = document.getElementsByClassName("news_close")[0];
+const newsletterButton = document.querySelector('.newsletter_button');
+let newsModal = document.getElementById("modal_newsletter");
+const newsCloseButton = document.getElementsByClassName("news_close")[0];
+const newsletterInput = document.querySelector(".newsletter_input");
+const newsletterError = document.querySelector(".newsletter_error_alert");
 
-newsletter_button.addEventListener("click", function() {
-  news_modal.style.display = "block";
+newsletterButton.addEventListener("click", function(event) {
+  event.preventDefault();
+  if (validateEmail(newsletterInput.value)){
+    if (newsletterInput.classList.contains("newsletter_input_error")) { newsletterInput.classList.remove("newsletter_input_error"); }
+    newsletterError.style.display = "none";
+    newsModal.style.display = "block";
+    newsletterInput.value = "";
+  } else {
+    newsletterInput.classList.add("newsletter_input_error");
+    newsletterError.style.display = "block";
+    alert("Email inválido!");
+  }
 });
 
-news_close_button.addEventListener("click", function() {
-  news_modal.style.display = "none";
+function validateEmail(email){
+  var reg = /^[a-zA-Z0-9_.-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$/
+  if (reg.test(email)) {
+    return true; }
+  else {
+    return false;
+  }
+}
+
+newsCloseButton.addEventListener("click", function() {
+  newsModal.style.display = "none";
 });
 
 window.addEventListener("click", function(event) {
 if (event.target == news_modal) {
-  news_modal.style.display = "none";
+  newsModal.style.display = "none";
 }
 });

@@ -7,6 +7,9 @@
 @import url("footer.css");
 @import url("newsletter.css");
 @import url("modal.css");
+@import url("stores.css");
+@import url("news.css");
+@import url("sales.css");
 
 /* Setting the principal variables */
 :root{
