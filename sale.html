@@ -120,9 +120,32 @@
             <div class="swiper-pagination"></i></div>
         </div>
 
-        <section class="sales">
+        <section class="products products_sales">
+            <h3 class="products_title">Produtos com desconto:</h3>
+            <div class="products_container" data-products-promotional>
+                <!-- Promotional Products will be loaded here -->
+            </div>
+        </section>
 
-            <!-- Sales goes here -->
+        <section class="product_modal">
+            
+            <div id="modal" class="modal">
+                <div class="modal_content">
+                    <div class="modal_header">
+                        <i class="fa-regular fa-circle-check fa-2xl modal_icon" style="color: #daff01;"></i>
+                        <p class="modal_header_title">Confira detalhes sobre o produto</p>
+                        <span class="close">&times;</span>
+                    </div>
+
+                    <div class="modal_outer_content">
+
+                        <!-- Modal Content goes here -->
+
+                    </div>
+                   
+                
+                </div>
+            </div>
 
         </section>
 
@@ -206,7 +229,7 @@
         <script src="assets/js/index.js"></script>
 
         <!-- link do script showProducts (Conexão via API ao DB.JSON) -->
-        <script type='module' src="assets/js/showProducts.js"></script>
+        <script type='module' src="assets/js/promotionalProducts.js"></script>
 
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

@@ -56,6 +56,11 @@
     margin: 0 0 10px 16px;
 }
 
+.discount{
+    text-decoration: line-through;
+    margin: 0 0 10px 16px;
+}
+
 .product_cto{
     padding: 9px 16px;
     background-color: var(--color-purple);

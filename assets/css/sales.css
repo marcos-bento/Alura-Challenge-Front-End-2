@@ -1,0 +1,8 @@
+.discount{
+    font-size: 0.75rem;
+    color: var(--color-grey);
+}
+
+.products_sales{
+    padding-top: 4rem;
+}

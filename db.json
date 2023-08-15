@@ -8,6 +8,7 @@
         "product_label": "Camiseta Conforto",
         "product_description": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
         "product_price": "70,00",
+        "product_promotional_price": "59,90",
         "seller_info": "riachuelo",
         "category": "Camisetas",
         "color": [
@@ -55,6 +56,7 @@
         "product_label": "Calça Alfaiataria",
         "product_description": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
         "product_price": "180,00",
+        "product_promotional_price": "180,00",
         "seller_info": "riachuelo",
         "category": "Calças",
         "color": [
@@ -102,6 +104,7 @@
         "product_label": "Tênis Chunky",
         "product_description": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
         "product_price": "250,00",
+        "product_promotional_price": "250,00",
         "seller_info": "riachuelo",
         "category": "Calçados",
         "color": [
@@ -149,6 +152,7 @@
         "product_label": "Jaqueta Jeans",
         "product_description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
         "product_price": "150,00",
+        "product_promotional_price": "150,00",
         "seller_info": "riachuelo",
         "category": "Casacos",
         "color": [
@@ -196,6 +200,7 @@
         "product_label": "Óculos Redondo",
         "product_description": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
         "product_price": "120,00",
+        "product_promotional_price": "99,90",
         "seller_info": "riachuelo",
         "category": "Óculos",
         "color": [
@@ -243,6 +248,7 @@
         "product_label": "Bolsa coringa",
         "product_description": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
         "product_price": "120,00",
+        "product_promotional_price": "120,00",
         "seller_info": "riachuelo",
         "category": "Bolsas",
         "color": [

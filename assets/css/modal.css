@@ -173,7 +173,7 @@
 
     .modal_content{
         width: 700px;
-        height: 587px;
+        height: auto;
     }
 
     .modal_product_image{

@@ -1,39 +1,53 @@
+// ##################################################################################################################################
+// Show Products
+// ##################################################################################################################################
+
 import { conectApi } from "./conectaApi.js";
 
 const productsList = document.querySelector("[data-products]");
 let search = false;
-
 async function showProducts(){
     search = false;
     productsList.innerHTML = "";
     try {
         const products = await conectApi.productsList();
-        buildProductsPage(products);
+        buildProductsPage(products.conexaoConvertida, productsList);
     } catch (error) {
         productsList.innerHTML = `${error} <br> Erro ao exibir a lista de produtos!`;
     }
 }
 
-function buildProductsPage(list){
-    for (let i in list.conexaoConvertida) {
+function promotionalPrice(price, promotionalPrice){
+    if (price > promotionalPrice){
+        return {string: `<p class="discount">De R$${price.toFixed(2).replace('.', ',')} </p>
+        <p class="product_price">por R$${promotionalPrice.toFixed(2).replace('.', ',')}</p>`, Boolean: true};
+    } else {
+        return {string: `<p class="product_price">R$${price.toFixed(2).replace('.', ',')}</p>`, Boolean: false};
+    }
+}
+
+function buildProductsPage(list, htmlComponent){
+    let price;
+    for (let i in list) {
+        price = promotionalPrice(parseFloat(list[i].product_price.replace(',', '.')), parseFloat(list[i].product_promotional_price.replace(',', '.')));
         const productBox = `<div class="product_card product_card_${i+1}}"> 
-        <img class="product_image_mobile" src="${list.conexaoConvertida[i].product_image_mobile}">
-        <img class="product_image_tablet" src="${list.conexaoConvertida[i].product_image_tablet}">
-        <img class="product_image_desktop" src="${list.conexaoConvertida[i].product_image_desktop}">
-        <h4 class="product_label">${list.conexaoConvertida[i].product_label}</h4>
-        <p class="product_description">${list.conexaoConvertida[i].product_description}</p>
-        <p class="product_price">R$${list.conexaoConvertida[i].product_price}</p>
-        <button class="product_cto openModal" id="${list.conexaoConvertida[i].id}"> Ver mais </button>
+        <img class="product_image_mobile" src="${list[i].product_image_mobile}">
+        <img class="product_image_tablet" src="${list[i].product_image_tablet}">
+        <img class="product_image_desktop" src="${list[i].product_image_desktop}">
+        <h4 class="product_label">${list[i].product_label}</h4>
+        <p class="product_description">${list[i].product_description}</p>
+        ${price.string}
+        <button class="product_cto openModal" id="${list[i].id}"> Ver mais </button>
         </div>`;
-        productsList.innerHTML += productBox;
+        htmlComponent.innerHTML += productBox;
     }
 }
 
 showProducts();
 
-// ##########################
+// ##################################################################################################################################
 // Search Feature
-// ##########################
+// ##################################################################################################################################
 
 const inputSearch = document.querySelector("[data-search]");
 const searchButton = document.querySelector("[data-search-button]");
@@ -42,9 +56,10 @@ inputSearch.addEventListener('keypress', function(event) {
     if (event.keyCode === 13) { //Enter button
         if (!inputSearch.value || inputSearch.value == "") {
             if (search == true){
-                showProducts();
                 event.preventDefault();
+                showProducts();
             } else {
+                event.preventDefault();
                 return alert('Digite um valor para pesquisa!');
             }
         } else {
@@ -84,7 +99,7 @@ mobileSearchButton.addEventListener("click", function(event) {
     } else {
         searchProducts(mobileSearch.value);
     }
-});
+}); 
 
 async function searchProducts(searchTerm){
     search = true;
@@ -95,34 +110,36 @@ async function searchProducts(searchTerm){
             productsList.innerHTML = `<h2><br><br> Nenhum resultado encontrado com o termo "${searchTerm}"`;
         } else {
             productsList.innerHTML = "";
-            buildProductsPage(products);
+            productsList.style.textAlign = "left"
+            buildProductsPage(products.conexaoConvertida, productsList);
         }
     } catch (error) {
         productsList.innerHTML = `${error} <br> Erro ao exibir a lista de produtos!`;
     }
 }
 
-// ##########################
+// ##################################################################################################################################
 // Search from category buttons
-// ##########################
+// ##################################################################################################################################
 
 let categoryButton = document.getElementsByClassName("category_button");
 
 for (let i = 0; i < categoryButton.length; i++) {
     categoryButton[i].addEventListener("click", function(event) {
         event.preventDefault();
-        searchProducts(categoryButton[i].innerHTML)
+        searchProducts(categoryButton[i].innerHTML);
     });
 }
 
-// ##########################
+// ##################################################################################################################################
 // JS FOR MODAL
-// ##########################
+// ##################################################################################################################################
 
 const modalBox = document.querySelector(".modal_outer_content");
 
 window.addEventListener("DOMContentLoaded", function () {
     infoModalConstruct();
+    searchFeature();
 });
 
 function infoModalConstruct(){
@@ -135,7 +152,7 @@ function infoModalConstruct(){
             event.preventDefault();
             try {
                 const product = await conectApi.searchProductById(event.target.getAttribute("id"));
-                constructModal(product.conexaoConvertida);
+                constructModal(product.conexaoConvertida, modalBox);
             } catch (error) {
                 modalBox.innerHTML = `${error.statusConexao} <br> Erro ao exibir a lista de produtos!`;
             }
@@ -154,7 +171,8 @@ function infoModalConstruct(){
     });
 }
 
-function constructModal(product){
+function constructModal(product, htmlComponent){
+    let price = promotionalPrice(parseFloat(product.product_price.replace(',', '.')), parseFloat(product.product_promotional_price.replace(',', '.')));
     const productBox = `<div class="modal_product_image_large_screens">
         <img src="${product.product_image_tablet}" alt="${product.product_image_alt}" class="modal_product_image_large">
     </div>
@@ -164,7 +182,7 @@ function constructModal(product){
         <h2 class="modal_product_name">${product.product_label}</h2>
         <p class="modal_product_details">${product.product_description}</p>
         <hr class="modal_hr">
-        <p class="modal_product_price">R$ ${product.product_price}</p>
+        ${price.string}
         <p class="modal_seller_info">vendido e entregue por ${product.seller_info}</p>
         <hr class="modal_hr_2">
         <h3 class="modal_product_variation">Cor:</h3>
@@ -209,5 +227,16 @@ function constructModal(product){
 
         <button class="add_to_cart_button">Adicionar à sacola</button>
     </div>`;
-    modalBox.innerHTML = productBox;
+    htmlComponent.innerHTML = productBox;
+}
+
+// ##################################################################################################################################
+// Export functions
+// ##################################################################################################################################
+
+export const showProductsList = {
+    promotionalPrice,
+    buildProductsPage,
+    infoModalConstruct,
+    constructModal
 }
