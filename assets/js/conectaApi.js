@@ -17,8 +17,42 @@ async function searchProductById(productId) {
     return { conexaoConvertida: produtoEncontrado, statusConexao: conexao.status };
 }
 
+async function postProduct (image, name, description, price, promocionalPrice, seller, category, tag01, color01, color02, color03, size01, size02, size03, size04, size05){
+    const conexao = await fetch("http://localhost:3000/products", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            product_image_desktop: image,
+            product_image_tablet: image,
+            product_image_mobile: image,
+            product_label: name,
+            product_description: description,
+            product_price: price,
+            product_promotional_price: promocionalPrice,
+            seller_info: seller,
+            category: category,
+            tag01: tag01,
+        })
+    });
+    const statusConexao = conexao.status;
+    const conexaoConvertida = await conexao.json();
+    return { conexaoConvertida, statusConexao };
+}
+
+async function deleteProduct(productId) {
+    const conexao = await fetch("http://localhost:3000/products/"+productId, {
+        method: "DELETE",
+        headers: {"Content-Type": "application/json"},
+    });
+    const statusConexao = conexao.status;
+    const conexaoConvertida = await conexao.json();
+    return { conexaoConvertida, statusConexao };
+}
+
 export const conectApi = {
     productsList,
     searchProducts,
-    searchProductById
+    searchProductById,
+    postProduct,
+    deleteProduct
 }

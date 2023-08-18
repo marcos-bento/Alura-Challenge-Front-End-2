@@ -57,6 +57,8 @@
 }
 
 .discount{
+    font-size: 0.75rem;
+    color: var(--color-grey);
     text-decoration: line-through;
     margin: 0 0 10px 16px;
 }
@@ -68,6 +70,20 @@
     border: none;
     margin: 0 0 16px 16px;
     cursor: pointer;
+}
+
+.product_button_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.product_tag01{
+    font-size: 9px;
+    padding: 8px 8px;
+    margin: 6px 16px 16px 8px;
+    color: white;
+    background-color: var(--color-orange);
 }
 
 /* Media query for 768px */

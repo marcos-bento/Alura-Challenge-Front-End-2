@@ -1,292 +1,298 @@
 {
   "products": [
-      { 
-        "id": 1, 
-        "product_image_desktop": "assets/img/Desktop/Imagens Cards/Camiseta.png",
-        "product_image_tablet": "assets/img/Tablet/Imagens Cards/camiseta.png",
-        "product_image_mobile": "assets/img/Mobile/Imagens cards/Card camiseta.png",
-        "product_label": "Camiseta Conforto",
-        "product_description": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
-        "product_price": "70,00",
-        "product_promotional_price": "59,90",
-        "seller_info": "riachuelo",
-        "category": "Camisetas",
-        "color": [
-          {
-            "id": 1,
-            "name": "black"
-          },
-          {
-            "id": 2,
-            "name": "white"
-          },
-          {
-            "id": 3,
-            "name": "blue"
-          }
-        ],
-        "size": [
-          {
-            "id": 1,
-            "name": "P"
-          },
-          {
-            "id": 2,
-            "name": "PP"
-          },
-          {
-            "id": 3,
-            "name": "M"
-          },
-          {
-            "id": 4,
-            "name": "G"
-          },
-          {
-            "id": 5,
-            "name": "GG"
-          }
-        ] 
-      },
-      {
-        "id": 2,
-        "product_image_desktop": "assets/img/Desktop/Imagens Cards/Calça.png",
-        "product_image_tablet": "assets/img/Tablet/Imagens Cards/calça.png",
-        "product_image_mobile": "assets/img/Mobile/Imagens cards/Card calça.png",
-        "product_label": "Calça Alfaiataria",
-        "product_description": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
-        "product_price": "180,00",
-        "product_promotional_price": "180,00",
-        "seller_info": "riachuelo",
-        "category": "Calças",
-        "color": [
-          {
-            "id": 1,
-            "name": "black"
-          },
-          {
-            "id": 2,
-            "name": "white"
-          },
-          {
-            "id": 3,
-            "name": "pink"
-          }
-        ],
-        "size": [
-          {
-            "id": 1,
-            "name": "P"
-          },
-          {
-            "id": 2,
-            "name": "PP"
-          },
-          {
-            "id": 3,
-            "name": "M"
-          },
-          {
-            "id": 4,
-            "name": "G"
-          },
-          {
-            "id": 5,
-            "name": "GG"
-          }
-        ] 
-      },
-      {
-        "id": 3,
-        "product_image_desktop": "assets/img/Desktop/Imagens Cards/Tenis.png",
-        "product_image_tablet": "assets/img/Tablet/Imagens Cards/tenis.png",
-        "product_image_mobile": "assets/img/Mobile/Imagens cards/Card tenis.png",
-        "product_label": "Tênis Chunky",
-        "product_description": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
-        "product_price": "250,00",
-        "product_promotional_price": "250,00",
-        "seller_info": "riachuelo",
-        "category": "Calçados",
-        "color": [
-          {
-            "id": 1,
-            "name": "black"
-          },
-          {
-            "id": 2,
-            "name": "white"
-          },
-          {
-            "id": 3,
-            "name": "blue"
-          }
-        ],
-        "size": [
-          {
-            "id": 1,
-            "name": "P"
-          },
-          {
-            "id": 2,
-            "name": "PP"
-          },
-          {
-            "id": 3,
-            "name": "M"
-          },
-          {
-            "id": 4,
-            "name": "G"
-          },
-          {
-            "id": 5,
-            "name": "GG"
-          }
-        ] 
-      },
-      {
-        "id": 4,
-        "product_image_desktop": "assets/img/Desktop/Imagens Cards/Jaqueta.png",
-        "product_image_tablet": "assets/img/Tablet/Imagens Cards/jaqueta jeans.png",
-        "product_image_mobile": "assets/img/Mobile/Imagens cards/Card jaqueta jeans.png",
-        "product_label": "Jaqueta Jeans",
-        "product_description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
-        "product_price": "150,00",
-        "product_promotional_price": "150,00",
-        "seller_info": "riachuelo",
-        "category": "Casacos",
-        "color": [
-          {
-            "id": 1,
-            "name": "black"
-          },
-          {
-            "id": 2,
-            "name": "white"
-          },
-          {
-            "id": 3,
-            "name": "blue"
-          }
-        ],
-        "size": [
-          {
-            "id": 1,
-            "name": "P"
-          },
-          {
-            "id": 2,
-            "name": "PP"
-          },
-          {
-            "id": 3,
-            "name": "M"
-          },
-          {
-            "id": 4,
-            "name": "G"
-          },
-          {
-            "id": 5,
-            "name": "GG"
-          }
-        ] 
-      },
-      {
-        "id": 5,
-        "product_image_desktop": "assets/img/Desktop/Imagens Cards/óculos.png",
-        "product_image_tablet": "assets/img/Tablet/Imagens Cards/óculos.png",
-        "product_image_mobile": "assets/img/Mobile/Imagens cards/Cards óculos.png",
-        "product_label": "Óculos Redondo",
-        "product_description": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
-        "product_price": "120,00",
-        "product_promotional_price": "99,90",
-        "seller_info": "riachuelo",
-        "category": "Óculos",
-        "color": [
-          {
-            "id": 1,
-            "name": "black"
-          },
-          {
-            "id": 2,
-            "name": "white"
-          },
-          {
-            "id": 3,
-            "name": "blue"
-          }
-        ],
-        "size": [
-          {
-            "id": 1,
-            "name": "P"
-          },
-          {
-            "id": 2,
-            "name": "PP"
-          },
-          {
-            "id": 3,
-            "name": "M"
-          },
-          {
-            "id": 4,
-            "name": "G"
-          },
-          {
-            "id": 5,
-            "name": "GG"
-          }
-        ] 
-      },
-      {
-        "id": 6,
-        "product_image_desktop": "assets/img/Desktop/Imagens Cards/Bolsa.png",
-        "product_image_tablet": "assets/img/Tablet/Imagens Cards/bolsa.png",
-        "product_image_mobile": "assets/img/Mobile/Imagens cards/Card bolsa.png",
-        "product_label": "Bolsa coringa",
-        "product_description": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
-        "product_price": "120,00",
-        "product_promotional_price": "120,00",
-        "seller_info": "riachuelo",
-        "category": "Bolsas",
-        "color": [
-          {
-            "id": 1,
-            "name": "black"
-          },
-          {
-            "id": 2,
-            "name": "white"
-          },
-          {
-            "id": 3,
-            "name": "blue"
-          }
-        ],
-        "size": [
-          {
-            "id": 1,
-            "name": "P"
-          },
-          {
-            "id": 2,
-            "name": "PP"
-          },
-          {
-            "id": 3,
-            "name": "M"
-          },
-          {
-            "id": 4,
-            "name": "G"
-          },
-          {
-            "id": 5,
-            "name": "GG"
-          }
-        ] 
-      }
+    {
+      "id": 1,
+      "product_image_desktop": "assets/img/Desktop/Imagens Cards/Camiseta.png",
+      "product_image_tablet": "assets/img/Tablet/Imagens Cards/camiseta.png",
+      "product_image_mobile": "assets/img/Mobile/Imagens cards/Card camiseta.png",
+      "product_label": "Camiseta Conforto",
+      "product_description": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão. Modelagem unissex.",
+      "product_price": "70,00",
+      "product_promotional_price": "59,90",
+      "seller_info": "riachuelo",
+      "category": "Camisetas",
+      "tag01": "",
+      "color": [
+        {
+          "id": 1,
+          "name": "black"
+        },
+        {
+          "id": 2,
+          "name": "white"
+        },
+        {
+          "id": 3,
+          "name": "blue"
+        }
+      ],
+      "size": [
+        {
+          "id": 1,
+          "name": "P"
+        },
+        {
+          "id": 2,
+          "name": "PP"
+        },
+        {
+          "id": 3,
+          "name": "M"
+        },
+        {
+          "id": 4,
+          "name": "G"
+        },
+        {
+          "id": 5,
+          "name": "GG"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "product_image_desktop": "assets/img/Desktop/Imagens Cards/Calça.png",
+      "product_image_tablet": "assets/img/Tablet/Imagens Cards/calça.png",
+      "product_image_mobile": "assets/img/Mobile/Imagens cards/Card calça.png",
+      "product_label": "Calça Alfaiataria",
+      "product_description": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
+      "product_price": "180,00",
+      "product_promotional_price": "169,95",
+      "seller_info": "riachuelo",
+      "category": "Calças",
+      "tag01": "true",
+      "color": [
+        {
+          "id": 1,
+          "name": "black"
+        },
+        {
+          "id": 2,
+          "name": "white"
+        },
+        {
+          "id": 3,
+          "name": "pink"
+        }
+      ],
+      "size": [
+        {
+          "id": 1,
+          "name": "P"
+        },
+        {
+          "id": 2,
+          "name": "PP"
+        },
+        {
+          "id": 3,
+          "name": "M"
+        },
+        {
+          "id": 4,
+          "name": "G"
+        },
+        {
+          "id": 5,
+          "name": "GG"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "product_image_desktop": "assets/img/Desktop/Imagens Cards/Tenis.png",
+      "product_image_tablet": "assets/img/Tablet/Imagens Cards/tenis.png",
+      "product_image_mobile": "assets/img/Mobile/Imagens cards/Card tenis.png",
+      "product_label": "Tênis Chunky",
+      "product_description": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
+      "product_price": "250,00",
+      "product_promotional_price": "250,00",
+      "seller_info": "riachuelo",
+      "category": "Calçados",
+      "tag01": "true",
+      "color": [
+        {
+          "id": 1,
+          "name": "black"
+        },
+        {
+          "id": 2,
+          "name": "white"
+        },
+        {
+          "id": 3,
+          "name": "blue"
+        }
+      ],
+      "size": [
+        {
+          "id": 1,
+          "name": "P"
+        },
+        {
+          "id": 2,
+          "name": "PP"
+        },
+        {
+          "id": 3,
+          "name": "M"
+        },
+        {
+          "id": 4,
+          "name": "G"
+        },
+        {
+          "id": 5,
+          "name": "GG"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "product_image_desktop": "assets/img/Desktop/Imagens Cards/Jaqueta.png",
+      "product_image_tablet": "assets/img/Tablet/Imagens Cards/jaqueta jeans.png",
+      "product_image_mobile": "assets/img/Mobile/Imagens cards/Card jaqueta jeans.png",
+      "product_label": "Jaqueta Jeans",
+      "product_description": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
+      "product_price": "150,00",
+      "product_promotional_price": "150,00",
+      "seller_info": "riachuelo",
+      "category": "Casacos",
+      "tag01": "true",
+      "color": [
+        {
+          "id": 1,
+          "name": "black"
+        },
+        {
+          "id": 2,
+          "name": "white"
+        },
+        {
+          "id": 3,
+          "name": "blue"
+        }
+      ],
+      "size": [
+        {
+          "id": 1,
+          "name": "P"
+        },
+        {
+          "id": 2,
+          "name": "PP"
+        },
+        {
+          "id": 3,
+          "name": "M"
+        },
+        {
+          "id": 4,
+          "name": "G"
+        },
+        {
+          "id": 5,
+          "name": "GG"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "product_image_desktop": "assets/img/Desktop/Imagens Cards/óculos.png",
+      "product_image_tablet": "assets/img/Tablet/Imagens Cards/óculos.png",
+      "product_image_mobile": "assets/img/Mobile/Imagens cards/Cards óculos.png",
+      "product_label": "Óculos Redondo",
+      "product_description": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
+      "product_price": "120,00",
+      "product_promotional_price": "99,90",
+      "seller_info": "riachuelo",
+      "category": "Óculos",
+      "tag01": "",
+      "color": [
+        {
+          "id": 1,
+          "name": "black"
+        },
+        {
+          "id": 2,
+          "name": "white"
+        },
+        {
+          "id": 3,
+          "name": "blue"
+        }
+      ],
+      "size": [
+        {
+          "id": 1,
+          "name": "P"
+        },
+        {
+          "id": 2,
+          "name": "PP"
+        },
+        {
+          "id": 3,
+          "name": "M"
+        },
+        {
+          "id": 4,
+          "name": "G"
+        },
+        {
+          "id": 5,
+          "name": "GG"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "product_image_desktop": "assets/img/Desktop/Imagens Cards/Bolsa.png",
+      "product_image_tablet": "assets/img/Tablet/Imagens Cards/bolsa.png",
+      "product_image_mobile": "assets/img/Mobile/Imagens cards/Card bolsa.png",
+      "product_label": "Bolsa coringa",
+      "product_description": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
+      "product_price": "120,00",
+      "product_promotional_price": "120,00",
+      "seller_info": "riachuelo",
+      "category": "Bolsas",
+      "tag01": "",
+      "color": [
+        {
+          "id": 1,
+          "name": "black"
+        },
+        {
+          "id": 2,
+          "name": "white"
+        },
+        {
+          "id": 3,
+          "name": "blue"
+        }
+      ],
+      "size": [
+        {
+          "id": 1,
+          "name": "P"
+        },
+        {
+          "id": 2,
+          "name": "PP"
+        },
+        {
+          "id": 3,
+          "name": "M"
+        },
+        {
+          "id": 4,
+          "name": "G"
+        },
+        {
+          "id": 5,
+          "name": "GG"
+        }
+      ]
+    }
   ]
 }

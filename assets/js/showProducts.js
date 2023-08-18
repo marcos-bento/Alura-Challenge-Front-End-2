@@ -26,9 +26,19 @@ function promotionalPrice(price, promotionalPrice){
     }
 }
 
+function productsTags(product){
+    if (product === true){
+        return `<p class="product_tag01">NOVIDADE</p>`;
+    } else {
+        return "";
+    }
+}
+
 function buildProductsPage(list, htmlComponent){
     let price;
+    let tag;
     for (let i in list) {
+        tag = productsTags(Boolean(list[i].tag01));
         price = promotionalPrice(parseFloat(list[i].product_price.replace(',', '.')), parseFloat(list[i].product_promotional_price.replace(',', '.')));
         const productBox = `<div class="product_card product_card_${i+1}}"> 
         <img class="product_image_mobile" src="${list[i].product_image_mobile}">
@@ -37,7 +47,10 @@ function buildProductsPage(list, htmlComponent){
         <h4 class="product_label">${list[i].product_label}</h4>
         <p class="product_description">${list[i].product_description}</p>
         ${price.string}
+        <div class="product_button_box">
         <button class="product_cto openModal" id="${list[i].id}"> Ver mais </button>
+        ${tag}
+        </div>
         </div>`;
         htmlComponent.innerHTML += productBox;
     }
@@ -139,7 +152,6 @@ const modalBox = document.querySelector(".modal_outer_content");
 
 window.addEventListener("DOMContentLoaded", function () {
     infoModalConstruct();
-    searchFeature();
 });
 
 function infoModalConstruct(){
@@ -173,6 +185,7 @@ function infoModalConstruct(){
 
 function constructModal(product, htmlComponent){
     let price = promotionalPrice(parseFloat(product.product_price.replace(',', '.')), parseFloat(product.product_promotional_price.replace(',', '.')));
+    let tag = productsTags(Boolean(product.tag01));
     const productBox = `<div class="modal_product_image_large_screens">
         <img src="${product.product_image_tablet}" alt="${product.product_image_alt}" class="modal_product_image_large">
     </div>
@@ -224,8 +237,10 @@ function constructModal(product, htmlComponent){
                 <label class="radio-type-label">${product.size[4].name}</label>
             </div>
         </div>
-
+        <div class="product_button_box">
         <button class="add_to_cart_button">Adicionar à sacola</button>
+        ${tag}
+        </div>
     </div>`;
     htmlComponent.innerHTML = productBox;
 }
@@ -236,6 +251,7 @@ function constructModal(product, htmlComponent){
 
 export const showProductsList = {
     promotionalPrice,
+    productsTags,
     buildProductsPage,
     infoModalConstruct,
     constructModal

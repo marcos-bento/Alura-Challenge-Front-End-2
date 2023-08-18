@@ -11,6 +11,9 @@
 @import url("news.css");
 @import url("sales.css");
 
+/* Importing CSS files from Admin Panel */
+@import url("admin.css");
+
 /* Setting the principal variables */
 :root{
     --main-font: 'Inter';
