@@ -29,7 +29,7 @@ function buildProductsPage(products){
     <h2>Deletar</h2>
     </div>`;
     for (let index = 0; index < products.length; index++) {
-        content = `<div>
+        content = `<div class="adminPanel_right_components_product">
         <button><i class="fa-solid fa-file-pen fa-2xl edit_button"></i></button>
         <img class="adminPanel_right_components_image" src="${products[index].product_image_mobile}" alt="">
         <p>${products[index].product_label}</p>
@@ -131,7 +131,6 @@ function deleteButtons(){
             } 
         }
     });
-    
 }
 
 // ##################################################################################################################################
@@ -146,16 +145,5 @@ homeButton.addEventListener("click", function(){
 });
 
 postProductButton.addEventListener("click", function(){
-    // window.location="adminPost.html";
-    let image = "https://cdn-images.farfetch-contents.com/12/56/23/29/12562329_11915047_1000.jpg";
-    conectApi.postProduct(
-        image,
-        "bolsa gucci",
-        "Bolsa GG Marmont matelassê mini",
-        "13990,00",
-        "13990,00",
-        "Gucci",
-        "Bolsas",
-        "true",
-    );
+    window.location="adminPost.html";
 });

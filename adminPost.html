@@ -45,13 +45,113 @@
                 </ul>
             </div>
 
-            <div class="adminPanel_right_components" data-post-products>
-                <p>WIP</p>
+            <div class="adminPanel_right_components">
+                <h2 class="adminPanel_product_title">Preencha os dados do produto a ser cadastrado:</h2>
+
+                <div class="adminPanel_post">
+                    <div class="adminPanel_forms_container" data-post-products>
+                        <form class="adminPanel_form">
+                            <label class="form_label" for="">Nome do produto</label>
+                            <input class="form_add_product form_product_name" type="text" placeholder="Digite o nome do produto" data-name>
+                        </form>
+        
+                        <form class="adminPanel_form">
+                            <label class="form_label" for="">Endereço da imagem</label>
+                            <input class="form_add_product form_product_image" type="text" placeholder="Digite o endereço da imagem" data-image-url>
+                        </form>
+
+                        <div class="image_mobile" data-image-mobile>
+
+                        </div>
+        
+                        <label class="form_label" for="">Categoria do produto</label>
+                        <select name="" id="" class="dropdown_category form_add_product" data-category>
+                            <option value="Camisetas">Camisetas</option>
+                            <option value="Calças">Calças</option>
+                            <option value="Calçados">Calçados</option>
+                            <option value="Casacos">Casacos</option>
+                            <option value="Óculos">Óculos</option>
+                            <option value="Bolsas">Bolsas</option>
+                        </select>
+        
+                        <form class="adminPanel_form">
+                            <label class="form_label" for="">Descrição do produto</label>
+                            <input class="form_add_product form_product_description" type="text" placeholder="Digite a descrição" data-description>
+                        </form>
+
+                        <form class="adminPanel_form">
+                            <label class="form_label" for="">Vendedor</label>
+                            <input class="form_add_product form_product_seller" type="text" placeholder="Digite o vendedor (Ex: Riachuelo)" data-seller>
+                        </form>
+        
+                        <form class="adminPanel_form">
+                            <label class="form_label" for="">Preço cheio</label>
+                            <input class="form_add_product form_product_price" type="text" placeholder="Digite o preço cheio" data-price>
+                        </form>
+                        
+                        <div><input type="checkbox" data-promotional-checkbox><label for="">Preço promocional?</label></div>
+    
+                        <form class="adminPanel_form form_product_promocional_price" data-promotional-area>
+                            <label class="form_label" for="">Preço promocional</label>
+                            <input class="form_add_product " type="text" placeholder="Digite o preço promocional" data-promotional-price>
+                        </form>
+        
+                        <form class="adminPanel_form">
+                            <label class="form_label" for="">Opção de cor:</label>
+                            <input class="form_add_product form_product_color" type="text" placeholder="Digite a opção de cor 1" data-color-01>
+                        </form>
+    
+                        <form class="adminPanel_form">
+                            <label class="form_label" for="">Opção de cor:</label>
+                            <input class="form_add_product form_product_color" type="text" placeholder="Digite a opção de cor 2" data-color-02>
+                        </form>
+    
+                        <form class="adminPanel_form">
+                            <label class="form_label" for="">Opção de cor:</label>
+                            <input class="form_add_product form_product_color" type="text" placeholder="Digite a opção de cor 3" data-color-03>
+                        </form>
+
+                        <form class="adminPanel_form">
+                            <label class="form_label" for="">Opção de tamanho:</label>
+                            <input class="form_add_product form_product_size" type="text" placeholder="Digite a opção de tamanho 1" data-size-01>
+                        </form>
+
+                        <form class="adminPanel_form">
+                            <label class="form_label" for="">Opção de tamanho:</label>
+                            <input class="form_add_product form_product_size" type="text" placeholder="Digite a opção de tamanho 2" data-size-02>
+                        </form>
+
+                        <form class="adminPanel_form">
+                            <label class="form_label" for="">Opção de tamanho:</label>
+                            <input class="form_add_product form_product_size" type="text" placeholder="Digite a opção de tamanho 3" data-size-03>
+                        </form>
+
+                        <form class="adminPanel_form">
+                            <label class="form_label" for="">Opção de tamanho:</label>
+                            <input class="form_add_product form_product_size" type="text" placeholder="Digite a opção de tamanho 4" data-size-04>
+                        </form>
+
+                        <form class="adminPanel_form">
+                            <label class="form_label" for="">Opção de tamanho:</label>
+                            <input class="form_add_product form_product_size" type="text" placeholder="Digite a opção de tamanho 5" data-size-05>
+                        </form>
+                    </div>
+
+                    <div class="adminPanel_image_container" data-image>
+                
+                    </div>
+
+                </div>
+
+                <div class="container">
+                    <button class="button_post_product" data-add-product>Cadastrar produto</button>
+                  </div>
+
             </div>
         </section>
 
         <!-- link do scripts in body -->
-        <script type="module" src="assets/js/adminPanelShowProducts.js"></script>
+        <script type="module" src="assets/js/postProduct.js"></script>
     </main>
 
     <footer>

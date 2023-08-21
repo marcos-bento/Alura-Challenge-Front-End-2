@@ -14,37 +14,29 @@
       "tag01": "",
       "color": [
         {
-          "id": 1,
           "name": "black"
         },
         {
-          "id": 2,
           "name": "white"
         },
         {
-          "id": 3,
           "name": "blue"
         }
       ],
       "size": [
         {
-          "id": 1,
           "name": "P"
         },
         {
-          "id": 2,
           "name": "PP"
         },
         {
-          "id": 3,
           "name": "M"
         },
         {
-          "id": 4,
           "name": "G"
         },
         {
-          "id": 5,
           "name": "GG"
         }
       ]
@@ -63,37 +55,29 @@
       "tag01": "true",
       "color": [
         {
-          "id": 1,
           "name": "black"
         },
         {
-          "id": 2,
           "name": "white"
         },
         {
-          "id": 3,
           "name": "pink"
         }
       ],
       "size": [
         {
-          "id": 1,
           "name": "P"
         },
         {
-          "id": 2,
           "name": "PP"
         },
         {
-          "id": 3,
           "name": "M"
         },
         {
-          "id": 4,
           "name": "G"
         },
         {
-          "id": 5,
           "name": "GG"
         }
       ]
@@ -112,37 +96,29 @@
       "tag01": "true",
       "color": [
         {
-          "id": 1,
           "name": "black"
         },
         {
-          "id": 2,
           "name": "white"
         },
         {
-          "id": 3,
           "name": "blue"
         }
       ],
       "size": [
         {
-          "id": 1,
           "name": "P"
         },
         {
-          "id": 2,
           "name": "PP"
         },
         {
-          "id": 3,
           "name": "M"
         },
         {
-          "id": 4,
           "name": "G"
         },
         {
-          "id": 5,
           "name": "GG"
         }
       ]
@@ -161,37 +137,29 @@
       "tag01": "true",
       "color": [
         {
-          "id": 1,
           "name": "black"
         },
         {
-          "id": 2,
           "name": "white"
         },
         {
-          "id": 3,
           "name": "blue"
         }
       ],
       "size": [
         {
-          "id": 1,
           "name": "P"
         },
         {
-          "id": 2,
           "name": "PP"
         },
         {
-          "id": 3,
           "name": "M"
         },
         {
-          "id": 4,
           "name": "G"
         },
         {
-          "id": 5,
           "name": "GG"
         }
       ]
@@ -210,37 +178,29 @@
       "tag01": "",
       "color": [
         {
-          "id": 1,
           "name": "black"
         },
         {
-          "id": 2,
           "name": "white"
         },
         {
-          "id": 3,
           "name": "blue"
         }
       ],
       "size": [
         {
-          "id": 1,
           "name": "P"
         },
         {
-          "id": 2,
           "name": "PP"
         },
         {
-          "id": 3,
           "name": "M"
         },
         {
-          "id": 4,
           "name": "G"
         },
         {
-          "id": 5,
           "name": "GG"
         }
       ]
@@ -259,40 +219,155 @@
       "tag01": "",
       "color": [
         {
-          "id": 1,
           "name": "black"
         },
         {
-          "id": 2,
           "name": "white"
         },
         {
-          "id": 3,
           "name": "blue"
         }
       ],
       "size": [
         {
-          "id": 1,
           "name": "P"
         },
         {
-          "id": 2,
           "name": "PP"
         },
         {
-          "id": 3,
           "name": "M"
         },
         {
-          "id": 4,
           "name": "G"
         },
         {
-          "id": 5,
           "name": "GG"
         }
       ]
+    },
+    {
+      "product_image_desktop": "https://cdn-images.farfetch-contents.com/20/31/54/15/20315415_51002064_1000.jpg",
+      "product_image_tablet": "https://cdn-images.farfetch-contents.com/20/31/54/15/20315415_51002064_1000.jpg",
+      "product_image_mobile": "https://cdn-images.farfetch-contents.com/20/31/54/15/20315415_51002064_1000.jpg",
+      "product_label": "Camisa com estampa gráfica",
+      "product_description": "colarinho cubano, fechamento frontal por botões, mangas longas, abotoamento no punho, bolso pespontado no busto e barra reta.",
+      "product_price": "122,00",
+      "product_promotional_price": "122,00",
+      "seller_info": "Nanushka",
+      "category": "camisetas",
+      "tag01": "true",
+      "color": [
+        {
+          "name": "Black"
+        },
+        {
+          "name": "White"
+        },
+        {
+          "name": "Blue"
+        }
+      ],
+      "size": [
+        {
+          "name": "P"
+        },
+        {
+          "name": "PP"
+        },
+        {
+          "name": "M"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "GG"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "product_image_desktop": "https://cdn-images.farfetch-contents.com/15/98/07/37/15980737_29852719_1000.jpg",
+      "product_image_tablet": "https://cdn-images.farfetch-contents.com/15/98/07/37/15980737_29852719_1000.jpg",
+      "product_image_mobile": "https://cdn-images.farfetch-contents.com/15/98/07/37/15980737_29852719_1000.jpg",
+      "product_label": "Polo Ralph Lauren Jaqueta",
+      "product_description": "Jaqueta matelassê com capuz e logo Azul marinho de poliéster reciclado, Polo Ralph Lauren.",
+      "product_price": "3126,00",
+      "product_promotional_price": "3026,00",
+      "seller_info": "Polo",
+      "category": "Casacos",
+      "tag01": "true",
+      "color": [
+        {
+          "name": "Preto"
+        },
+        {
+          "name": "Azul marinho"
+        },
+        {
+          "name": "Cinza"
+        }
+      ],
+      "size": [
+        {
+          "name": "P"
+        },
+        {
+          "name": "PP"
+        },
+        {
+          "name": "M"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "GG"
+        }
+      ],
+      "id": 8
+    },
+    {
+      "product_image_desktop": "https://cdn-images.farfetch-contents.com/15/26/06/97/15260697_26362820_1000.jpg",
+      "product_image_tablet": "https://cdn-images.farfetch-contents.com/15/26/06/97/15260697_26362820_1000.jpg",
+      "product_image_mobile": "https://cdn-images.farfetch-contents.com/15/26/06/97/15260697_26362820_1000.jpg",
+      "product_label": "Gucci Tênis GG 1977",
+      "product_description": "O tênis de cano baixo é apresentado em canvas com GG mini nas cores bege e ébano.",
+      "product_price": "999,90",
+      "product_promotional_price": "999,90",
+      "seller_info": "Gucci",
+      "category": "Calçados",
+      "tag01": "true",
+      "color": [
+        {
+          "name": "Black"
+        },
+        {
+          "name": "White"
+        },
+        {
+          "name": "Blue"
+        }
+      ],
+      "size": [
+        {
+          "name": "P"
+        },
+        {
+          "name": "PP"
+        },
+        {
+          "name": "M"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "GG"
+        }
+      ],
+      "id": 9
     }
   ]
 }

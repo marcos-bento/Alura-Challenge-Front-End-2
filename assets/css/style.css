@@ -1,4 +1,4 @@
-/* Importing all CSS files */
+/* Importing CSS files from index/Homepage */
 @import url("header.css");
 @import url("banner.css");
 @import url("category.css");
@@ -7,12 +7,19 @@
 @import url("footer.css");
 @import url("newsletter.css");
 @import url("modal.css");
-@import url("stores.css");
-@import url("news.css");
-@import url("sales.css");
+
+/* Importing CSS files from stores page */
+@import url("stores/stores.css");
+
+/* Importing CSS files from news page */
+@import url("news/news.css");
+
+/* Importing CSS files from sales page */
+@import url("sales/sales.css");
 
 /* Importing CSS files from Admin Panel */
-@import url("admin.css");
+@import url("admin/admin.css");
+@import url("admin/adminPost.css");
 
 /* Setting the principal variables */
 :root{

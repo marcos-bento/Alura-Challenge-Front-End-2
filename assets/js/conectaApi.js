@@ -32,6 +32,8 @@ async function postProduct (image, name, description, price, promocionalPrice, s
             seller_info: seller,
             category: category,
             tag01: tag01,
+            color: [{name: color01},{name: color02},{name: color03}],
+            size: [{name: size01},{name: size02},{name: size03},{name: size04},{name: size05}]
         })
     });
     const statusConexao = conexao.status;
