@@ -1,24 +1,24 @@
 async function productsList (){
-    const conexao = await fetch("http://localhost:3000/products");
+    const conexao = await fetch("https://alura-challenge-front-end-2.vercel.app/products");
     const conexaoConvertida = await conexao.json();
     return { conexaoConvertida, statusConexao: conexao.status };
 }
 
 async function searchProducts(searchTerm) {
-    const conexao = await fetch("http://localhost:3000/products?q="+searchTerm);
+    const conexao = await fetch("https://alura-challenge-front-end-2.vercel.app/products?q="+searchTerm);
     const conexaoConvertida = await conexao.json();
     return { conexaoConvertida, statusConexao: conexao.status };
 }
 
 async function searchProductById(productId) {
-    const conexao = await fetch("http://localhost:3000/products");
+    const conexao = await fetch("https://alura-challenge-front-end-2.vercel.app/products");
     const conexaoConvertida = await conexao.json();
     const produtoEncontrado = conexaoConvertida.find(products => products.id == productId);
     return { conexaoConvertida: produtoEncontrado, statusConexao: conexao.status };
 }
 
 async function insertProduct (image, name, description, price, promocionalPrice, seller, category, tag01, color01, color02, color03, size01, size02, size03, size04, size05){
-    const conexao = await fetch("http://localhost:3000/products", {
+    const conexao = await fetch("https://alura-challenge-front-end-2.vercel.app/products", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({
@@ -43,7 +43,7 @@ async function insertProduct (image, name, description, price, promocionalPrice,
 
 async function editProduct (id, image, name, description, price, promocionalPrice, seller, category, tag01, color01, color02, color03, size01, size02, size03, size04, size05){
     console.log("Cá entrou: ")
-    const conexao = await fetch("http://localhost:3000/products/"+id, {
+    const conexao = await fetch("https://alura-challenge-front-end-2.vercel.app/products/"+id, {
         method: "PATCH",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({
@@ -67,7 +67,7 @@ async function editProduct (id, image, name, description, price, promocionalPric
 }
 
 async function deleteProduct(productId) {
-    const conexao = await fetch("http://localhost:3000/products/"+productId, {
+    const conexao = await fetch("https://alura-challenge-front-end-2.vercel.app/products/"+productId, {
         method: "DELETE",
         headers: {"Content-Type": "application/json"},
     });
