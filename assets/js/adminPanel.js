@@ -164,7 +164,7 @@ function editButtons(){
                 alert ("Produto marcado como TESTE não pode ser editado!");
             } else {
                 // saving idEdit on localestorage
-                localStorage.setItem('idEdit', JSON.stringify({idEdit}));
+                localStorage.setItem('idEdit', idEdit);
                 window.location="adminInsert.html";
             } 
         }
