@@ -95,6 +95,8 @@
 
     .product_image_tablet{
         display: block;
+        width: 330px;
+        height: 389px;
     }
 
     .product_image_mobile, .product_image_desktop{
