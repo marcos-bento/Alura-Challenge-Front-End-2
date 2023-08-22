@@ -65,6 +65,13 @@
     padding: 1rem;
 }
 
+.adminPanel_right_components_product{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
 .adminPanel_right_components > .adminPanel_right_components_titles{
     display: flex;
     flex-direction: column;
