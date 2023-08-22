@@ -44,7 +44,7 @@ addButton.addEventListener("click", function(){
     if (name.value == "" || price.value == ""){
         alert ("Por favor preencha os campos corretamente!");
     } else { 
-        conectApi.postProduct(
+        conectApi.insertProduct(
             (imageurl.value === "") ? "https://t4.ftcdn.net/jpg/04/73/25/49/360_F_473254957_bxG9yf4ly7OBO5I0O5KABlN930GwaMQz.jpg" : imageurl.value,
             name.value,
             (description.value === "") ? "Produto teste" : description.value,
@@ -75,3 +75,16 @@ const homeButton = document.querySelector(".adminPanel_button_home");
 homeButton.addEventListener("click", function(){
     window.location="index.html";
 });
+
+// ##################################################################################################################################
+// Edit feature (2/2) ... part 1 on adminPanelShowProducts.js
+// ##################################################################################################################################
+
+// retrieving idEdit from localstorage
+
+if (!localStorage["idEdit"]){
+    localStorage['idEdit']="";
+}else{
+    let idEdit = localStorage.getItem("idEdit");
+    console.log(idEdit);
+};

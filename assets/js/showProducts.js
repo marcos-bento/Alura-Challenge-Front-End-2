@@ -17,12 +17,24 @@ async function showProducts(){
     }
 }
 
-function promotionalPrice(price, promotionalPrice){
-    if (price > promotionalPrice){
-        return {string: `<p class="discount">De R$${price.toFixed(2).replace('.', ',')} </p>
-        <p class="product_price">por R$${promotionalPrice.toFixed(2).replace('.', ',')}</p>`, Boolean: true};
+function promotionalPrice(price, promotionalPrice) {
+    const formatCurrency = (value) => {
+        return value.toLocaleString('pt-BR', {
+            style: 'currency',
+            currency: 'BRL'
+        });
+    };
+    if (price > promotionalPrice) {
+        return {
+            string: `<p class="discount">De ${formatCurrency(price)}</p>
+                     <p class="product_price">por ${formatCurrency(promotionalPrice)}</p>`,
+            Boolean: true
+        };
     } else {
-        return {string: `<p class="product_price">R$${price.toFixed(2).replace('.', ',')}</p>`, Boolean: false};
+        return {
+            string: `<p class="product_price">${formatCurrency(price)}</p>`,
+            Boolean: false
+        };
     }
 }
 

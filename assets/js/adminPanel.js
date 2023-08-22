@@ -30,7 +30,7 @@ function buildProductsPage(products){
     </div>`;
     for (let index = 0; index < products.length; index++) {
         content = `<div class="adminPanel_right_components_product">
-        <button><i class="fa-solid fa-file-pen fa-2xl edit_button"></i></button>
+        <button><i class="fa-solid fa-file-pen fa-2xl edit_button" id="${products[index].id}"></i></button>
         <img class="adminPanel_right_components_image" src="${products[index].product_image_mobile}" alt="">
         <p>${products[index].product_label}</p>
         <p>R$${products[index].product_price}</p>
@@ -103,11 +103,28 @@ async function searchProducts(searchTerm){
 }
 
 // ##################################################################################################################################
+// Buttons
+// ##################################################################################################################################
+
+const homeButton = document.querySelector(".adminPanel_button_home");
+const insertProductButton = document.querySelector(".adminPanel_button_add");
+
+homeButton.addEventListener("click", function(){
+    window.location="index.html";
+});
+
+insertProductButton.addEventListener("click", function(){
+    localStorage.removeItem("idEdit");
+    window.location="adminInsert.html";
+});
+
+// ##################################################################################################################################
 // Delete Feature
 // ##################################################################################################################################
 
 window.addEventListener("DOMContentLoaded", function () {
     deleteButtons();
+    editButtons();
 });
 
 function deleteButtons(){
@@ -134,16 +151,22 @@ function deleteButtons(){
 }
 
 // ##################################################################################################################################
-// Buttons
+// Edit Feature (1/2) ... continues on insertProduct.js
 // ##################################################################################################################################
 
-const homeButton = document.querySelector(".adminPanel_button_home");
-const postProductButton = document.querySelector(".adminPanel_button_add");
-
-homeButton.addEventListener("click", function(){
-    window.location="index.html";
-});
-
-postProductButton.addEventListener("click", function(){
-    window.location="adminPost.html";
-});
+function editButtons(){
+    
+    htmlContent.addEventListener("click", async function (event) {
+        
+        if (event.target.classList.contains("edit_button")) {
+            let idEdit = parseInt(event.target.getAttribute("id"));
+            if (idEdit < 7){ // Validação para não editar os 6 primeiros produtos de teste
+                alert ("Produto marcado como TESTE não pode ser editado!");
+            } else {
+                // saving idEdit on localestorage
+                localStorage.setItem('idEdit', JSON.stringify({idEdit}));
+                window.location="adminInsert.html";
+            } 
+        }
+    });
+}

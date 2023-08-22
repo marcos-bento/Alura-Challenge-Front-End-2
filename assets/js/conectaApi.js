@@ -17,7 +17,7 @@ async function searchProductById(productId) {
     return { conexaoConvertida: produtoEncontrado, statusConexao: conexao.status };
 }
 
-async function postProduct (image, name, description, price, promocionalPrice, seller, category, tag01, color01, color02, color03, size01, size02, size03, size04, size05){
+async function insertProduct (image, name, description, price, promocionalPrice, seller, category, tag01, color01, color02, color03, size01, size02, size03, size04, size05){
     const conexao = await fetch("http://localhost:3000/products", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
@@ -55,6 +55,6 @@ export const conectApi = {
     productsList,
     searchProducts,
     searchProductById,
-    postProduct,
+    insertProduct,
     deleteProduct
 }

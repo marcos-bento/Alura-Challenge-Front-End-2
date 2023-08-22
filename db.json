@@ -329,25 +329,25 @@
       "id": 8
     },
     {
-      "product_image_desktop": "https://cdn-images.farfetch-contents.com/15/26/06/97/15260697_26362820_1000.jpg",
-      "product_image_tablet": "https://cdn-images.farfetch-contents.com/15/26/06/97/15260697_26362820_1000.jpg",
-      "product_image_mobile": "https://cdn-images.farfetch-contents.com/15/26/06/97/15260697_26362820_1000.jpg",
-      "product_label": "Gucci Tênis GG 1977",
-      "product_description": "O tênis de cano baixo é apresentado em canvas com GG mini nas cores bege e ébano.",
-      "product_price": "999,90",
-      "product_promotional_price": "999,90",
+      "product_image_desktop": "https://cdn-images.farfetch-contents.com/12/56/23/29/12562329_11915047_1000.jpg",
+      "product_image_tablet": "https://cdn-images.farfetch-contents.com/12/56/23/29/12562329_11915047_1000.jpg",
+      "product_image_mobile": "https://cdn-images.farfetch-contents.com/12/56/23/29/12562329_11915047_1000.jpg",
+      "product_label": "Gucci Bolsa GG marmont",
+      "product_description": "A bolsa GG Marmont mini possui formato estruturado e fechamento por aba com ferragem Duplo G em tom dourado envelhecido.",
+      "product_price": "13990",
+      "product_promotional_price": "13990",
       "seller_info": "Gucci",
-      "category": "Calçados",
+      "category": "Bolsas",
       "tag01": "true",
       "color": [
         {
-          "name": "Black"
+          "name": "Preto"
         },
         {
-          "name": "White"
+          "name": "Cinza"
         },
         {
-          "name": "Blue"
+          "name": "Vermelho"
         }
       ],
       "size": [

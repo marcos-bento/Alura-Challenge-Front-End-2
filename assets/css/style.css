@@ -14,8 +14,8 @@
 /* Importing CSS files from news page */
 @import url("news/news.css");
 
-/* Importing CSS files from sales page */
-@import url("sales/sales.css");
+/* Importing CSS files from deals page */
+@import url("deals/deals.css");
 
 /* Importing CSS files from Admin Panel */
 @import url("admin/admin.css");
