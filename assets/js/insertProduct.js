@@ -28,18 +28,14 @@ const size = [
     document.querySelector("[data-size-05]")
 ];
 
-imageurl.addEventListener("focusout", function(){
-    showimage();
-});
+imageurl.addEventListener("focusout", showimage());
 
 function showimage(){
     image.style.backgroundImage = "url("+imageurl.value+")";
     imageMobile.style.backgroundImage = "url("+imageurl.value+")";
 }
 
-promotionalCheckbox.addEventListener("click", function(){
-    showPromoPrice();
-});
+promotionalCheckbox.addEventListener("click", showPromoPrice());
 
 function showPromoPrice(){
     if (promotionalCheckbox.checked){
