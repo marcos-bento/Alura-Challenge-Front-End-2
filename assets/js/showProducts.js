@@ -162,9 +162,7 @@ for (let i = 0; i < categoryButton.length; i++) {
 
 const modalBox = document.querySelector(".modal_outer_content");
 
-window.addEventListener("DOMContentLoaded", function () {
-    infoModalConstruct();
-});
+window.addEventListener("DOMContentLoaded", infoModalConstruct());
 
 function infoModalConstruct(){
     let modal = document.getElementById("modal");
